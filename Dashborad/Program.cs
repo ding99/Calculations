@@ -3,7 +3,7 @@
 WriteLine("== Start Calculation");
 
 var kernel = new Kernel.KCore();
-double a = 2.5, b = 4;
+double a = 4, b = 2.5;
 
 ForegroundColor = ConsoleColor.Cyan;
 WriteLine($"{a} + {b} is {kernel.Add(a, b)}");

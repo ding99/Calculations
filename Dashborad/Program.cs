@@ -3,16 +3,16 @@
 WriteLine("== Start Calculation");
 
 var kernel = new Kernel.KCore();
-double a = 4, b = 2.5;
+double a = 6, b = 2.5;
 
 ForegroundColor = ConsoleColor.Cyan;
-WriteLine($"{a} + {b} is {kernel.Add(a, b)}");
+WriteLine($"{a} + {b} = {kernel.Add(a, b)}");
 
 ForegroundColor = ConsoleColor.DarkYellow;
-WriteLine($"{a} - {b} is {kernel.Subtract(a, b)}");
+WriteLine($"{a} - {b} = {kernel.Subtract(a, b)}");
 
 ForegroundColor = ConsoleColor.Yellow;
-WriteLine($"{a} * {b} is {kernel.Multiple(a, b)}");
+WriteLine($"{a} * {b} = {kernel.Multiple(a, b)}");
 
 ResetColor();
 WriteLine("== End Calculation");

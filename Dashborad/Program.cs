@@ -1,13 +1,15 @@
-﻿Console.WriteLine("= Start Calculation");
+﻿using static System.Console;
+
+WriteLine("== Start Calculation");
 
 var kernel = new Kernel.KCore();
+double a = 2.5, b = 4;
 
-Console.ForegroundColor = ConsoleColor.Cyan;
-double a = 3.5, b = 4;
-Console.WriteLine($"{a} + {b} is {kernel.Add(a, b)}");
+ForegroundColor = ConsoleColor.Cyan;
+WriteLine($"{a} + {b} is {kernel.Add(a, b)}");
 
-Console.ForegroundColor = ConsoleColor.Yellow;
-Console.WriteLine($"{a} * {b} is {kernel.Multiple(a, b)}");
+ForegroundColor = ConsoleColor.Yellow;
+WriteLine($"{a} * {b} is {kernel.Multiple(a, b)}");
 
-Console.ResetColor();
-Console.WriteLine("== End Calculation");
+ResetColor();
+WriteLine("== End Calculation");

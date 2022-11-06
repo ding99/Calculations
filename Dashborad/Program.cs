@@ -8,6 +8,9 @@ double a = 2.5, b = 4;
 ForegroundColor = ConsoleColor.Cyan;
 WriteLine($"{a} + {b} is {kernel.Add(a, b)}");
 
+ForegroundColor = ConsoleColor.DarkYellow;
+WriteLine($"{a} - {b} is {kernel.Subtract(a, b)}");
+
 ForegroundColor = ConsoleColor.Yellow;
 WriteLine($"{a} * {b} is {kernel.Multiple(a, b)}");
 
